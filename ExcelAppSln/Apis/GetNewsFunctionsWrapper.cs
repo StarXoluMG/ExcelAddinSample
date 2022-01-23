@@ -24,22 +24,22 @@ namespace ExcelApp.Apis
 
                 if (articlesResponse.Status == Statuses.Ok)
                 {
-                    // total results found
-                    Console.WriteLine(articlesResponse.TotalResults);
-
-                    string[,] listOfArticles = new string[articlesResponse.TotalResults, 5];
+                    string[,] listOfArticles = new string[articlesResponse.Articles.Count+1, 3];
 
                     int articleCounter = 0;
+
+                    listOfArticles[articleCounter, 0] = "Title";
+                    listOfArticles[articleCounter, 1] = "Url";
+                    listOfArticles[articleCounter, 2] = "PublishedAt";
 
                     // here's the first 20
                     foreach (var article in articlesResponse.Articles)
                     {
-                        listOfArticles[articleCounter, 0] = article.Title;
-                        listOfArticles[articleCounter, 1] = article.Author;
-                        listOfArticles[articleCounter, 2] = article.Description;
-                        listOfArticles[articleCounter, 3] = article.Url;
-                        listOfArticles[articleCounter, 4] = article.PublishedAt.ToString();
                         articleCounter++;
+                        listOfArticles[articleCounter, 0] = article.Title;
+                        listOfArticles[articleCounter, 1] = article.Url;
+                        listOfArticles[articleCounter, 2] = article.PublishedAt.ToString();
+                        
                     }
 
                     return listOfArticles;

@@ -93,7 +93,7 @@
     <Compile Include="Apis\ConnectToAPI.cs" />
     <Compile Include="Apis\GetNewsFunctionsWrapper.cs" />
     <Compile Include="ExcelFunctions\addInExtNewsFunctions.cs" />
-    <Compile Include="ExcelFunctions\MyFunctions.cs" />
+    <Compile Include="ExcelFunctions\BasicFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
