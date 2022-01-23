@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apis\ConnectToAPI.cs" />
+    <Compile Include="HelperFunctions\ConversionUtility.cs" />
     <Compile Include="Apis\GetNewsFunctionsWrapper.cs" />
     <Compile Include="ExcelFunctions\addInExtNewsFunctions.cs" />
     <Compile Include="ExcelFunctions\BasicFunctions.cs" />

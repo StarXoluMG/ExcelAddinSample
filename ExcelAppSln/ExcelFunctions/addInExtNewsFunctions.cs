@@ -12,5 +12,12 @@ namespace ExcelApp.ExcelFunctions
             //casting to object - this is because excel dna lib, https://github.com/Excel-DNA/ExcelDna/issues/173
             return (object[,]) GetNewsFunctionsWrapper.getPopularArticlesByNameAndDate(name, fromDate);
         }
+
+        [ExcelFunction(Description = "Returns a list of headlines based on the country code")]
+        public static object[,] extgetHeadlines(string countryCode)
+        {
+            //casting to object - this is because excel dna lib, https://github.com/Excel-DNA/ExcelDna/issues/173
+            return (object[,])GetNewsFunctionsWrapper.getHeadlines(countryCode);
+        }
     }
 }
