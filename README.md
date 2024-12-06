@@ -4,11 +4,11 @@ This Excel add-in lets you see the popular news articles of the day for a specif
 
 ## Table of Contents
 
-* Functionality
-* Prerequisites
-* Installation
-* Testing Sample
-* License
+* [Functionality](#functionality)
+* [Prerequisites](#prerequisites)
+* [Installation](#installation)
+* [Testing Sample](#testing-sample)
+* [License](#license) 
 
 ## Functionality
 
